@@ -57,8 +57,10 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BrowserForm.cs">
@@ -66,6 +68,12 @@
     </Compile>
     <Compile Include="BrowserForm.Designer.cs">
       <DependentUpon>BrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserTabUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BrowserTabUserControl.Designer.cs">
+      <DependentUpon>BrowserTabUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\ControlExtensions.cs" />
     <Compile Include="Program.cs">
@@ -75,6 +83,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
